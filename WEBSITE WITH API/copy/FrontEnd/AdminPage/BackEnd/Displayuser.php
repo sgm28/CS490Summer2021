@@ -10,7 +10,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     //echo "id: " . $row["usersName"] . "<br>";
     echo "<input type='checkbox'" . "id='" .  $row["usersName"] . "'" . "name='" . $row["usersName"]
-	    . "'". "value='" . $row["usersName"] . "'";
+	    . "'". "value='" . $row["usersName"] . "'" . ">";
   }
 } else {
   echo "0 results";
