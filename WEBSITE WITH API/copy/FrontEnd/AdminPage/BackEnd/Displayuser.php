@@ -11,6 +11,7 @@ if ($result->num_rows > 0) {
     //echo "id: " . $row["usersName"] . "<br>";
     echo "<input type='checkbox'" . "id='" .  $row["usersName"] . "'" . "name='" . $row["usersName"]
 	    . "'". "value='" . $row["usersName"] . "'" . ">";
+	 echo "<label for='" . $row["usersName"] . "'>" . $row["usersName"] . "</label><br>";
   }
 } else {
   echo "0 results";
