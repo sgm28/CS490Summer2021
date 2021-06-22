@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="./script.js"></script>
 <style>
 body {font-family: Arial;}
 
