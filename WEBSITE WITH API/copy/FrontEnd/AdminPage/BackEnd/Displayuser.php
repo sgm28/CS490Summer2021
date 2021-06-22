@@ -1,6 +1,6 @@
 <?php
 
-		require '../../../dbh.inc.php';
+		require '../../dbh.inc.php';
 
 $sql = "SELECT usersName FROM users";
 $result = $conn->query($sql);
