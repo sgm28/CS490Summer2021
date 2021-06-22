@@ -119,7 +119,7 @@ body {font-family: Arial;}
   <label for="vehicle3"> User 3</label>
   <hr>
   <button type="submit" class="deactivatebtn">Deactive</button>
-  <?php require './BackEnd/Displayuser.php'; ?>
+  <?php include './BackEnd/Displayuser.php'; ?>
 
 
 </form>
