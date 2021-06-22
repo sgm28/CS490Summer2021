@@ -125,6 +125,10 @@ body {font-family: Arial;}
 </form>
 </div>
 
+
+   
+</body>
+</html> 
 <script>
 function operation(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -140,6 +144,3 @@ function operation(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 </script>
-   
-</body>
-</html> 
