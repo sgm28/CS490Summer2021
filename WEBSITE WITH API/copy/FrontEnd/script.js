@@ -1,11 +1,13 @@
-$(document).ready(function() {
-  //$('.sign-up-toggle').hide();
-});
-
-var main = document.getElementById('main');
-
-document.getElementById('sign-up').onclick = function() {
-  //$('.sign-up-toggle').addClass('sign-up-toggle-active');
-  $('.sign-up-toggle.start-on').addClass('now-off');
-  $('.sign-up-toggle.start-off').addClass('now-on');
+function operation(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
 }
