@@ -44,7 +44,7 @@ else{
 
 if (isset($_SESSION["userlevel"])){
 	if ($_SESSION["userlevel"] == 1){
-		header('Location: ./FrontEnd/AdminPage/Home.html');
+		header('Location: ./FrontEnd/AdminPage/Home.php');
 		exit();
 	}
 }
