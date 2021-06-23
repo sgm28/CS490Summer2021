@@ -117,6 +117,11 @@ body {font-family: Arial;}
   <label for="javascript">C</label>
   <hr>
   <button type="submit" class="deletebtn">Delete</button>
+
+  <?php include './BackEnd/DisplayuserForDelete.php'; ?>
+  <hr>
+  <button type="submit" class="deactivatebtn">Deactive</button>
+
 </form>  
 </div>
 
