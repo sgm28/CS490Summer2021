@@ -14,10 +14,10 @@ if ($result->num_rows > 0) {
 	 echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "active: ";  
 
 
-	 	if($row["active"] == 0)
-	 	{
-	 	    echo "disable";
-	 	}
+	 	// if($row["active"] == 0)
+	 	// {
+	 	//     echo "disable";
+	 	// }
 	 
 
 
