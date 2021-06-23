@@ -11,14 +11,13 @@ if ($result->num_rows > 0) {
     //echo "id: " . $row["usersName"] . "<br>";
     echo "<input type='checkbox'" . "id='" .  $row["usersName"] . "'" . "name='" . "id"
 	    . "'". "value='" . $row["usersId"] . "'" . ">";
-	 echo "<label for='" . $row["usersName"] . "'>" . $row["usersName"] . "</label><br>";
+	 echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "</label><br>";
   }
 } else {
   echo "0 results";
 }
 
- <input type="checkbox" id="user3" name="user3" value="user3">
-
+ 
 	  
 ?>
  
