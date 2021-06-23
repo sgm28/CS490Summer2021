@@ -11,6 +11,34 @@ if(isset($_POST['id']))
 	  if($_POST['formid']=='Remove')
 	  {
 	  	echo "Delete tab was called";
+
+      require '../../dbh.inc.php';
+
+      
+      $sql = "DELETE FROM users WHERE usersId = `$_POST['usersId']`;
+      $result = $conn->query($sql);
+
+
+              if ($result->num_rows > 0) {
+               // output data of each row
+                while($row = $result->fetch_assoc()) {
+
+           
+
+                  echo "Delete operation successful";
+          
+         
+          
+          }
+        } else {
+          echo "0 results";
+        }
+
+
+
+
+
+
 	  } 
   } 
 ?>
