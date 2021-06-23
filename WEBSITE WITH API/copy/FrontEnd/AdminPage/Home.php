@@ -1,3 +1,10 @@
+<?php
+  include '../../autoload.php'
+  //session_start();
+  //if(isset($POST[])
+
+?>
+
 <!DOCTYPE html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -108,7 +115,7 @@ body {font-family: Arial;}
 
 <div id="Disable" class="tabcontent">
   <h3>Disable User</h3>
-  <form>
+  <form method="post">
  <!--  <input type="checkbox" id="user1" name="user1" value="user1">
   <label for="vehicle1"> User 1</label><br>
   <input type="checkbox" id="user2" name="user2" value="user2">
