@@ -14,7 +14,7 @@ if(isset($_POST['id']))
 
       require '../../dbh.inc.php';
 
-     echo var_dump($_POST); 
+     //echo var_dump($_POST); 
       $sql = "DELETE FROM users WHERE usersId ='" .  $_POST['id'][0]. "'";
 		$result = $conn->query($sql);
 
