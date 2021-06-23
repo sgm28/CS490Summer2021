@@ -1,14 +1,14 @@
 <?php
 
-//ini_set('display_errors', 1);
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
-//  include '../../autoload.php';
-//   session_start();
- // if(isset($POST['id'])
- // {
- //   echo "Have data";
-  //} 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+  include '../../autoload.php';
+   session_start();
+  if(isset($POST['id'])
+  {
+    echo "Have data";
+  } 
 
 ?>
 
@@ -108,7 +108,7 @@ body {font-family: Arial;}
 
 <div id="Remove" class="tabcontent">
   <h3>Remove User</h3>
-  <form>
+  <form method="post" id="Remove">
 
  
 
