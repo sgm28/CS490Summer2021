@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
 	echo "<input type='radio'" . "id='" . $row["usersName"] . "'" .  "name='" . "id[]" . "'" . "value='"
 	. $row['usersId'] . "'" . ">";
 	echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "</label><br>";
-	echo "Hello";
+	
     
 	
   }

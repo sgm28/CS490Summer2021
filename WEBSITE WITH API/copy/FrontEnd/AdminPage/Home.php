@@ -138,7 +138,7 @@ body {font-family: Arial;}
   <!-- <hr> -->
   
 
-  <?php include './BackEnd/Displayuser.php'; ?>
+  
   <hr>
   <button type="submit" class="deactivatebtn">Deactive</button>
 
