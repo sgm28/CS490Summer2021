@@ -119,7 +119,7 @@ body {font-family: Arial;}
   <button type="submit" class="deletebtn">Delete</button>
 
   <?php include './BackEnd/DisplayuserForDelete.php'; ?>
-  
+
   <hr>
   <button type="submit" class="deactivatebtn">Deactive</button>
 
@@ -129,16 +129,17 @@ body {font-family: Arial;}
 <div id="Disable" class="tabcontent">
   <h3>Disable User</h3>
   <form method="post">
- <!--  <input type="checkbox" id="user1" name="user1" value="user1">
+    
+  <input type="checkbox" id="user1" name="user1" value="user1">
   <label for="vehicle1"> User 1</label><br>
   <input type="checkbox" id="user2" name="user2" value="user2">
   <label for="vehicle2"> User 2</label><br>
   <input type="checkbox" id="user3" name="user3" value="user3">
-  <label for="vehicle3"> User 3</label> -->
-  <!-- <hr> -->
-  
+  <label for="vehicle3"> User 3</label>
 
   
+
+ <!-- <?php include './BackEnd/Displayuser.php'; ?> -->
   <hr>
   <button type="submit" class="deactivatebtn">Deactive</button>
 
