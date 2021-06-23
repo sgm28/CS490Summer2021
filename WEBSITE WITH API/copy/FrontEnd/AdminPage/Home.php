@@ -4,12 +4,15 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
   include '../../autoload.php';
-   session_start();
-  if(isset($POST['id'])
-  {
-    echo "Have data";
-  } 
+	session_start();
 
+if(isset($_POST['id']))
+  {
+	  if($_POST['formid']=='Remove')
+	  {
+	  	echo "Delete tab was called";
+	  } 
+  } 
 ?>
 
 <!DOCTYPE html>
@@ -108,13 +111,14 @@ body {font-family: Arial;}
 
 <div id="Remove" class="tabcontent">
   <h3>Remove User</h3>
-  <form method="post" id="Remove">
+  <form method="post" id="Remove" name="Remove">
 
  
 
   <?php include './BackEnd/DisplayuserForDelete.php'; ?>
 
   <hr>
+   <input type="hidden" id="custId" name="formid" value="Remove">
    <button type="submit" class="deletebtn">Delete</button>
 
 </form>  
