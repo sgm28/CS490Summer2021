@@ -14,20 +14,20 @@ if ($result->num_rows > 0) {
     //echo "id: " . $row["usersName"] . "<br>";
     echo "<input type='checkbox'" . "id='" .  $row["usersName"] . "'" . "name='" . "id[]"
 	    . "'". "value='" . $row["usersId"] . "'" . ">";
-	 echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "active: " .
+	 echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "active: ";
 
 	 if(isset($row["active"]))
 	 {
 
 	 	if($row["active"] == 0)
 	 	{
-	 	     "disable"
+	 	     echo "disable";
 	 	}
 	 }
 
 
 
-	   . "</label><br>";
+	   echo "</label><br>";
   }
 } else {
   echo "0 results";
