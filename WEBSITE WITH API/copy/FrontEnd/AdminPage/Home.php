@@ -118,7 +118,7 @@ body {font-family: Arial;}
   <hr>
   <button type="submit" class="deletebtn">Delete</button>
 
-  <!-- <?php include './BackEnd/DisplayuserForDelete.php'; ?> -->
+
   <hr>
   <button type="submit" class="deactivatebtn">Deactive</button>
 
