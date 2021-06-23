@@ -118,7 +118,7 @@ body {font-family: Arial;}
   <hr>
   <button type="submit" class="deletebtn">Delete</button>
 
-  <!-- <?php include './BackEnd/DisplayuserForDelete.php'; ?> -->
+  <?php include './BackEnd/DisplayuserForDelete.php'; ?>
 
   <hr>
   <button type="submit" class="deactivatebtn">Deactive</button>
@@ -139,7 +139,7 @@ body {font-family: Arial;}
 
   
 
- <!-- <?php include './BackEnd/Displayuser.php'; ?> -->
+  <?php include './BackEnd/Displayuser.php'; ?> 
   <hr>
   <button type="submit" class="deactivatebtn">Deactive</button>
 
