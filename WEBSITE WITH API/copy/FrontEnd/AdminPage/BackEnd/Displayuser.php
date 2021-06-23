@@ -16,16 +16,18 @@ if ($result->num_rows > 0) {
 	    . "'". "value='" . $row["usersId"] . "'" . ">";
 	 echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "active: " .
 
+	 if(isset($row["active"]))
+	 {
 
-	 	// if($row["active"] == 0)
-	 	// {
-	 	//     echo "disable";
-	 	// }
-	 
+	 	if($row["active"] == 0)
+	 	{
+	 	     "disable"
+	 	}
+	 }
 
 
 
-	   "</label><br>";
+	   . "</label><br>";
   }
 } else {
   echo "0 results";
