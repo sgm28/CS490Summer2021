@@ -1,5 +1,5 @@
 <?php
-  include '../../autoload.php'
+  include '../../autoload.php';
   session_start();
   if(isset($POST['id'])
   {
