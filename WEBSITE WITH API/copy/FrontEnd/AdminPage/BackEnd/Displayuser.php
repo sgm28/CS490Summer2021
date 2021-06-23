@@ -21,11 +21,11 @@ if ($result->num_rows > 0) {
 
 	 	if($row["active"] == 0)
 	 	{
-	 	     echo "disable";
+	 	     echo "<strong>disable</strong>";
 	 	}
 	 	else
 	 	{
-	 		echo "active";
+	 		echo "<strong>active</strong>";
 	 	}
 	}
 
