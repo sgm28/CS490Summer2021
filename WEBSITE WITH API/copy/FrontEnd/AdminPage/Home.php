@@ -1,10 +1,10 @@
 <?php
   include '../../autoload.php';
-  session_start();
+<!--   session_start();
   if(isset($POST['id'])
   {
     echo "Have data";
-  }
+  } -->
 
 ?>
 
