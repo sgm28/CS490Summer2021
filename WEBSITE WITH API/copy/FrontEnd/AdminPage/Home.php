@@ -10,7 +10,7 @@ if(isset($_POST['id']))
   {
 	  if($_POST['formid']=='Remove')
 	  {
-	  	echo "Delete tab was called";
+	  	//echo "Delete tab was called";
 
       require '../../dbh.inc.php';
 
@@ -20,7 +20,7 @@ if(isset($_POST['id']))
 
 		if ($result = $conn->query($sql)) {
 	
-	 echo "Delete operation successful";
+	 echo " Delete operation successful";
 		}
 	else {
    		 printf("Delete operation unsuccesful: %s\n", $conn->error);
