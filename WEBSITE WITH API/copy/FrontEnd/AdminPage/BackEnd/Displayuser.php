@@ -23,11 +23,12 @@ if ($result->num_rows > 0) {
 	 	{
 	 	     echo "disable";
 	 	}
-	 }
-	 else
-	 {
-	 	echo "active";
-	 }
+	 	else
+	 	{
+	 		echo "active";
+	 	}
+	}
+
 
 
 
