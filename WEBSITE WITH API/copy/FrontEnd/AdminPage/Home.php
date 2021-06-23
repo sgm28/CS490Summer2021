@@ -4,11 +4,11 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
   include '../../autoload.php';
-<!--   session_start();
-  if(isset($POST['id'])
-  {
-    echo "Have data";
-  } -->
+//   session_start();
+ // if(isset($POST['id'])
+ // {
+ //   echo "Have data";
+  //} 
 
 ?>
 
