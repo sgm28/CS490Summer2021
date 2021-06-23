@@ -14,24 +14,26 @@ if(isset($_POST['id']))
 
       require '../../dbh.inc.php';
 
-      
-      $sql = "DELETE FROM users WHERE usersId = `$_POST['usersId']`;
-      $result = $conn->query($sql);
+     echo var_dump($_POST); 
+      $sql = "DELETE FROM users WHERE usersId ='" .  $_POST['id'][0]. "'";
+		$result = $conn->query($sql);
 
-
-              if ($result->num_rows > 0) {
-               // output data of each row
-                while($row = $result->fetch_assoc()) {
-
+		if ($result = $conn->query($sql)) {
+	
+	 echo "Delete operation successful";
+		}
+	else {
+   		 printf("Delete operation unsuccesful: %s\n", $conn->error);
+	}
            
 
-                  echo "Delete operation successful";
+                 
           
          
           
-          }
-        } else {
-          echo "0 results";
+   } else {
+          echo "No form has been clicked";
+	  
         }
 
 
@@ -39,7 +41,6 @@ if(isset($_POST['id']))
 
 
 
-	  } 
   } 
 ?>
 
