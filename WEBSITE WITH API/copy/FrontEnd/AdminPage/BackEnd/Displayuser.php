@@ -11,7 +11,7 @@ if ($result->num_rows > 0) {
     //echo "id: " . $row["usersName"] . "<br>";
     echo "<input type='checkbox'" . "id='" .  $row["usersName"] . "'" . "name='" . "id[]"
 	    . "'". "value='" . $row["usersId"] . "'" . ">";
-	 echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "active: ";  
+	 echo "<label for='" . $row["usersId"] . "'>" . $row["usersName"] . "active: " .
 
 
 	 	// if($row["active"] == 0)
@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
 
 
 
-	  echo "</label><br>";
+	   "</label><br>";
   }
 } else {
   echo "0 results";
