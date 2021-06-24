@@ -175,7 +175,7 @@ if(!isset($array))
 
     }
     echo "\n";
-  echo "<div class='recipe'>"
+  echo "<div class='recipe'>";
       echo "<div class='recipe-header'>";
           echo "<h2>";
               echo $titlePerRecipe;
