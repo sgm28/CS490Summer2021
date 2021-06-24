@@ -211,7 +211,7 @@ if(!isset($array))
         echo $allInstructionOutput;
         echo "</div>";
       echo "</div>";
-  echo "</div>"
+  echo "</div>";
   
     $titlePerRecipe="";
     $imagePerRecipe="";
