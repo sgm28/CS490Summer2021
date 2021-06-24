@@ -52,6 +52,8 @@ if(!isset($array))
   $allEquipmentOutput ="";
    //Variable to stored all the  instructions per recipe
   $allInstructionOutput ="";
+  //Variable to stored the recipe summary
+  $summaryPerRecipe = "";
 
 
 
@@ -65,10 +67,11 @@ if(!isset($array))
     echo "<div class='recipe-body'>";
     echo "<div class='img-wrap'><img src=". $array['results'][$index]['image']   ."></div>";
    // echo  "<img src=". $array['results'][$index]['image'] . ">";
-    echo "<div class='description'>";
-    echo "<p>" . $array['results'][$index ]['summary'] . "</p>";
-    echo "Page source: ".  "<a href=" .  $array['results'][$index ]['sourceUrl'] . ">".  $array['results'][$index ]['sourceUrl'] . "</a>";
-    echo"</div>";
+    //echo "<div class='description'>";
+    $summaryPerRecipe = $summaryPerRecipe . 
+     "<p>" . $array['results'][$index ]['summary'] . "</p>" .
+     "Page source: ".  "<a href=" .  $array['results'][$index ]['sourceUrl'] . ">".  $array['results'][$index ]['sourceUrl'] . "</a>";
+    //echo"</div>";
     
 
     //Looping over each instruction
@@ -130,7 +133,7 @@ if(!isset($array))
         //Preventing the computer from printing more than one instruction heading per recipe
          if (isset( $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['step']) && $isInstructionsPrintedOnce == false)
          {
-            echo "<h3>" . "Instructions" . "</h3>";
+            //echo "<h3>" . "Instructions" . "</h3>";
             $isInstructionsPrintedOnce = true;
          }
           $allInstructionOutput = $allInstructionOutput . 
@@ -142,6 +145,12 @@ if(!isset($array))
 
     }
     echo "\n";
+
+
+    echo "<div class='description'>";
+    echo $summaryPerRecipe;
+    echo "</div>"; 
+      
 
     echo "<div class='ingredients'>";
     echo "<h3>Ingredients</h3>";
