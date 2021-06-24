@@ -3,15 +3,11 @@
 <head>
   <title>Recipe Results</title>
   <meta charset="UTF-8">
-<<<<<<< HEAD
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="recipe_search.css" type="text/css" rel="stylesheet">
-=======
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
->>>>>>> parent of 77c2dbb (Update recipe_search.php)
+
 </head>
 <?php
  session_start();
