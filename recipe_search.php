@@ -13,6 +13,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
+
+<style type="text/css">
+  
+  :root {
+  --size-limit: 1000px;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23e00e1f'/%3E%3Cstop offset='1' stop-color='%23750d42'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='27' height='27' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='13.5' cy='13.5' r='13.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.11'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+  border-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  font-size: 20px;
+}
+.no-select {
+  user-select: none;
+}
+body > div {
+  width: 100%;
+}
+#content-main {
+  max-width: 1000px;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+#recipe-list {
+  flex-grow: 1;
+}
+
+.recipe-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.recipe-header:before {
+  content: "▼";
+  margin-right: 20px;
+}
+.recipe-header.active:before {
+  content: "▲";
+}
+.recipe-body {
+  position: relative;
+  display: none;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.recipe-body > div {
+  width: 100%;
+  margin-top: 40px;
+}
+.recipe-body > .ingredients,
+.recipe-body > .equipment {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+.img-wrap > img {
+  max-height: 400px;
+  max-width: 400px;
+}
+  
+</style>
 <body>
 
 <div id="content-main">
