@@ -103,7 +103,7 @@ body > div {
   max-height: 400px;
   max-width: 400px;
 }
-  
+
 </style>
 <body>
 
@@ -311,5 +311,12 @@ if(!isset($array))
 ?>
 </div>
 </div>
+<script type="text/javascript">
+  
+  $('.recipe-header').click(function(){
+  $(this).next().slideToggle();
+  $(this).toggleClass('active');
+});
+</script>
 </body>
 </html>
