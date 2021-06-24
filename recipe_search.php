@@ -46,6 +46,8 @@ if(!isset($array))
 //echo $array['array'];
 
 
+  //Variable to stored all the  ingredients per recipe 
+  $allIngredientsOutput = "";
   //Looping over each recipe
   for ($index = 0; $index < $array['number']; $index++) {
 
@@ -71,7 +73,7 @@ if(!isset($array))
         for($stepsIndex = 0; $stepsIndex < count($array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps']); $stepsIndex++)
         {
 
-           $allIngredientsOutput = "";
+           
            //Looping over each ingredient
            $isIngredientsPrintedOnce = false;
            for($ingredientsIndex = 0; $ingredientsIndex < count($array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['ingredients']); $ingredientsIndex++)
@@ -130,8 +132,7 @@ if(!isset($array))
 
     }
     echo "\n";
-      echo $allIngredientsOutput;
-      $allIngredientsOutput="";
+    echo $allIngredientsOutput;
 }
 
 
