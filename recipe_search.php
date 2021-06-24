@@ -1,3 +1,19 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<div id="content-main">
+  <div id="recipe-list">
+    <div class="recipe">
+
+
+
+
+
+
+
+
+
 <?php 
 //echo "1";
 $query = "";
@@ -149,44 +165,45 @@ if(!isset($array))
 
     }
     echo "\n";
-
-    echo "<div class='recipe-header'>";
-      echo "<h2>";
-          echo $titlePerRecipe;
-      echo "</h2>";
-    echo "</div>";
-
-    echo "<div class='recipe-body'>";
-
-      echo "<div class='img-wrap'>";
-
-      //echo "<div class='img-wrap'><img src=". $array['results'][$index]['image']   ."></div>";
-      echo "<img src=" . 
-      $imagePerRecipe
-       . ">";
+  echo "<div class='recipe'>"
+      echo "<div class='recipe-header'>";
+          echo "<h2>";
+              echo $titlePerRecipe;
+          echo "</h2>";
       echo "</div>";
-      
-      echo "<div class='description'>";
-      echo $summaryPerRecipe;
-      echo "</div>"; 
+
+      echo "<div class='recipe-body'>";
+
+        echo "<div class='img-wrap'>";
+
+        echo "<img src=" . 
+        $imagePerRecipe
+         . ">";
+        echo "</div>";
         
+        echo "<div class='description'>";
+        echo $summaryPerRecipe;
+        echo "</div>"; 
+          
 
-      echo "<div class='ingredients'>";
-      echo "<h3>Ingredients</h3>";
-      echo $allIngredientsOutput;
-      echo "</div>";
+        echo "<div class='ingredients'>";
+        echo "<h3>Ingredients</h3>";
+        echo $allIngredientsOutput;
+        echo "</div>";
 
-      echo "<div class='equipment'>";
-      echo "<h3>Equipment</h3>";
-      echo $allEquipmentOutput; 
-      echo "</div>";
+        echo "<div class='equipment'>";
+        echo "<h3>Equipment</h3>";
+        echo $allEquipmentOutput; 
+        echo "</div>";
 
-      echo "<div class='instructions'>";
-      echo "<h3>Instructions</h3>";
-      echo $allInstructionOutput;
+        echo "<div class='instructions'>";
+        echo "<h3>Instructions</h3>";
+        echo $allInstructionOutput;
+        echo "</div>";
       echo "</div>";
-    echo "</div>";
+  echo "</div>"
   
+    $titlePerRecipe="";
     $imagePerRecipe="";
     $summaryPerRecipe="";
     $allIngredientsOutput="";
