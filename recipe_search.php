@@ -54,7 +54,8 @@ if(!isset($array))
   $allInstructionOutput ="";
   //Variable to stored the recipe summary
   $summaryPerRecipe = "";
-
+  //Variable to stored the recipe image
+  $imagePerRecipe = "";
 
 
   //Looping over each recipe
@@ -65,7 +66,8 @@ if(!isset($array))
     echo "<h2>" . $array['results'][$index]['title'] . " " . $array['results'][$index]['readyInMinutes']  . " minutes" . "</h2></div>";
 
     echo "<div class='recipe-body'>";
-    echo "<div class='img-wrap'><img src=". $array['results'][$index]['image']   ."></div>";
+   $imagePerRecipe =  $array['results'][$index]['image'];
+    //echo "<div class='img-wrap'><img src=". $array['results'][$index]['image']   ."></div>";
    // echo  "<img src=". $array['results'][$index]['image'] . ">";
     //echo "<div class='description'>";
     $summaryPerRecipe = $summaryPerRecipe . 
@@ -146,7 +148,10 @@ if(!isset($array))
     }
     echo "\n";
 
-
+    echo "<div class='img-wrap'>";
+    echo $imagePerRecipe;
+    echo "</div>";
+    
     echo "<div class='description'>";
     echo $summaryPerRecipe;
     echo "</div>"; 
@@ -168,7 +173,7 @@ if(!isset($array))
     echo "</div>";
 
   
- 
+    $summaryPerRecipe="";
     $allIngredientsOutput="";
     $allEquipmentOutput="";
     $allInstructionOutput="";
