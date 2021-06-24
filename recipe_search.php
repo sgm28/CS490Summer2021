@@ -94,8 +94,7 @@ if(!isset($array))
 
           
          }
-         echo $allIngredientsOutput;
-         $allIngredientsOutput="";
+       
         
           //Looping over equipment
          $isEquipmentPrintedOnce = false;
@@ -131,6 +130,8 @@ if(!isset($array))
 
     }
     echo "\n";
+      echo $allIngredientsOutput;
+      $allIngredientsOutput="";
 }
 
 
