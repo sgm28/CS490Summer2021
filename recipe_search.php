@@ -159,7 +159,11 @@ if(!isset($array))
     echo "<div class='recipe-body'>";
 
       echo "<div class='img-wrap'>";
+
+      //echo "<div class='img-wrap'><img src=". $array['results'][$index]['image']   ."></div>";
+      echo "<img src="
       echo $imagePerRecipe;
+      echo ">"
       echo "</div>";
       
       echo "<div class='description'>";
