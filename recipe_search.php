@@ -15,7 +15,8 @@
 </head>
 <body>
 
-
+<div id="content-main">
+  <div id="recipe-list">
 
 <?php 
 //echo "1";
@@ -216,5 +217,7 @@ if(!isset($array))
 
 
 ?>
+</div>
+</div>
 </body>
 </html>
