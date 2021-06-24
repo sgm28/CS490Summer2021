@@ -3,26 +3,24 @@
 <head>
   <title>Recipe Results</title>
   <meta charset="UTF-8">
-
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="recipe_search.css" type="text/css" rel="stylesheet">
 </head>
 <?php
- session_start();
 //Check if there is a user logged in
 //Get user and profile data
 if (isset($_SESSION["useruid"])){
-	//echo "</p>Hello there " . $_SESSION["username"]. "</p>";
-	// Variable to store username for recall
-	$current_user = $_SESSION["username"];
-	$user = new User();
-	$user_data = $user->get_user($_SESSION["userid"]);
+  //echo "</p>Hello there " . $_SESSION["username"]. "</p>";
+  // Variable to store username for recall
+  $current_user = $_SESSION["username"];
+  $user = new User();
+  $user_data = $user->get_user($_SESSION["userid"]);
 
 } else {
-	header("Location: main.php");
-	exit();
+  header("Location: main.php");
+  exit();
 }
 ?>
 <body>
@@ -38,16 +36,16 @@ if (isset($_SESSION["useruid"])){
     <div class="pfp">
       <div class="profile-menu hidden">
         <div class="profile-menu-header">
-					<?php echo $current_user; ?>
-				</div>
+          <?php echo $current_user; ?>
+        </div>
         <div class="profile-menu-body">
           <div class="profile-menu-option-list">
-						<a href="profile.php" class="profile-menu-option">Profile</a>
-						<?php if(checkMainProfile()): ?>
-						<a href="messages.php?id=<?php echo $user_data["usersId"]?>&read=1" class="profile-menu-option">Messages</a>
-						<?php else: ?>
-						<a href="messages.php?id=<?php echo $user_data["usersId"]?>&read=1" class="profile-menu-option">Message</a>
-						<?php endif; ?>
+            <a href="profile.php" class="profile-menu-option">Profile</a>
+            <?php if(checkMainProfile()): ?>
+            <a href="messages.php?id=<?php echo $user_data["usersId"]?>&read=1" class="profile-menu-option">Messages</a>
+            <?php else: ?>
+            <a href="messages.php?id=<?php echo $user_data["usersId"]?>&read=1" class="profile-menu-option">Message</a>
+            <?php endif; ?>
             <a class="profile-menu-option">Option 3</a>
           </div>
           <div class="profile-menu-sidebar">
@@ -67,14 +65,6 @@ if (isset($_SESSION["useruid"])){
   </form>
   <div id="recipe-list">
     <!-- OUTPUT THE RECIPES HERE -->
-    <p>Hello</p>
-
-
-
-
-
-
-
   </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
