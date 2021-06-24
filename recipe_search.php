@@ -36,6 +36,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow:  scroll;
 }
 * {
   box-sizing: border-box;
@@ -57,6 +58,7 @@ body > div {
   background: #fff;
   display: flex;
   flex-direction: column;
+  overflow:  scroll;
 }
 
 #recipe-list {
