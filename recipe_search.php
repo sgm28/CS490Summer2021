@@ -20,9 +20,11 @@
   :root {
   --size-limit: 1000px;
 }
+/*
 ::-webkit-scrollbar {
   width: 0px;
 }
+*/
 body {
   position: relative;
   min-height: 100vh;
