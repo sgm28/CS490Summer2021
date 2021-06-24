@@ -133,7 +133,7 @@ if(!isset($array))
             echo "<h3>" . "Instructions" . "</h3>";
             $isInstructionsPrintedOnce = true;
          }
-          $allInstructionOutput = $allIngredientsOutput . 
+          $allInstructionOutput = $allInstructionOutput . 
                       
                       "<p>" . $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['number'] . ". " . $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['step'] ."</p>";
            echo "\n"; 
