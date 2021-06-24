@@ -1,12 +1,12 @@
 <?php 
-echo "1";
+//echo "1";
 $query = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $query = test_input($_POST["search"]);
 
 }
-echo "2";
+//echo "2";
 // Preventing cross site scripting by cleaning up data.
 function test_input($data) {
   $data = trim($data);
@@ -14,35 +14,35 @@ function test_input($data) {
   $data = htmlspecialchars($data);
   return $data;
 }
-echo "2.5";
+//echo "2.5";
 // create & initialize a curl session
 $curl = curl_init();
-echo "3";
+//echo "3";
 // set our url with curl_setopt()
 curl_setopt($curl, CURLOPT_URL, 'https://api.spoonacular.com/recipes/complexSearch?query='. $query . '&addRecipeInformation=true'. '&apiKey=03cfb47edd6141b6b806837e1c114cfb');
-echo "4";
+//echo "4";
 // return the transfer as a string, also with setopt()
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-echo "5";
+//echo "5";
 // curl_exec() executes the started curl session
 // $output contains the output string
 $output = curl_exec($curl);
-echo "6";
+//echo "6";
 // close curl resource to free up system resources
 // (deletes the variable made by curl_init)
 curl_close($curl);
-echo "7";
+//echo "7";
 
 
 $array = json_decode($output, true);
-echo "8";
+//echo "8";
 //Checking to see if there are results.
 if(!isset($array))
 {
   echo "No results found";
   exit();
 }
-echo "9";
+//echo "9";
 //echo $array['array'];
 
 
