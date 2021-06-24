@@ -56,16 +56,18 @@ if(!isset($array))
   $summaryPerRecipe = "";
   //Variable to stored the recipe image
   $imagePerRecipe = "";
+  //Variable to stored the recipe title
+  $titlePerRecipe = "";
 
 
   //Looping over each recipe
   for ($index = 0; $index < $array['number']; $index++) {
 
-      echo "<div class='recipe'>";
-      echo "<div class='recipe-header'>";
-    echo "<h2>" . $array['results'][$index]['title'] . " " . $array['results'][$index]['readyInMinutes']  . " minutes" . "</h2></div>";
+      //echo "<div class='recipe'>";
+      //echo "<div class='recipe-header'>";
+      $titlePerRecipe = $titlePerRecipe .  $array['results'][$index]['title'] . " " . $array['results'][$index]['readyInMinutes']  . " minutes";
 
-    echo "<div class='recipe-body'>";
+   // echo "<div class='recipe-body'>";
    $imagePerRecipe =  $array['results'][$index]['image'];
     //echo "<div class='img-wrap'><img src=". $array['results'][$index]['image']   ."></div>";
    // echo  "<img src=". $array['results'][$index]['image'] . ">";
@@ -148,31 +150,40 @@ if(!isset($array))
     }
     echo "\n";
 
-    echo "<div class='img-wrap'>";
-    echo $imagePerRecipe;
+    echo "<div class='recipe-header'>";
+      echo "<h2>";
+          echo $titlePerRecipe;
+      echo "</h2>";
     echo "</div>";
-    
-    echo "<div class='description'>";
-    echo $summaryPerRecipe;
-    echo "</div>"; 
+
+    echo "<div class='recipe-body'>";
+
+      echo "<div class='img-wrap'>";
+      echo $imagePerRecipe;
+      echo "</div>";
       
+      echo "<div class='description'>";
+      echo $summaryPerRecipe;
+      echo "</div>"; 
+        
 
-    echo "<div class='ingredients'>";
-    echo "<h3>Ingredients</h3>";
-    echo $allIngredientsOutput;
+      echo "<div class='ingredients'>";
+      echo "<h3>Ingredients</h3>";
+      echo $allIngredientsOutput;
+      echo "</div>";
+
+      echo "<div class='equipment'>";
+      echo "<h3>Equipment</h3>";
+      echo $allEquipmentOutput; 
+      echo "</div>";
+
+      echo "<div class='instructions'>";
+      echo "<h3>Instructions</h3>";
+      echo $allInstructionOutput;
+      echo "</div>";
     echo "</div>";
-
-    echo "<div class='equipment'>";
-    echo "<h3>Equipment</h3>";
-    echo $allEquipmentOutput; 
-    echo "</div>";
-
-    echo "<div class='instructions'>";
-    echo "<h3>Instructions</h3>";
-    echo $allInstructionOutput;
-    echo "</div>";
-
   
+    $imagePerRecipe="";
     $summaryPerRecipe="";
     $allIngredientsOutput="";
     $allEquipmentOutput="";
