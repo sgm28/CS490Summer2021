@@ -1,10 +1,20 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+  
+  
+  <meta charset="UTF-8">
+  <title>Output</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+</head>
+<body>
+
+
 <div id="content-main">
   <div id="recipe-list">
-    <div class="recipe">
+    
 
 
 
@@ -213,3 +223,6 @@ if(!isset($array))
 
 
 ?>
+</div>
+</body>
+</html>
