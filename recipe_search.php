@@ -8,7 +8,22 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="recipe_search.css" type="text/css" rel="stylesheet">
 </head>
+<?php
+ session_start();
+//Check if there is a user logged in
+//Get user and profile data
+if (isset($_SESSION["useruid"])){
+	//echo "</p>Hello there " . $_SESSION["username"]. "</p>";
+	// Variable to store username for recall
+	$current_user = $_SESSION["username"];
+	$user = new User();
+	$user_data = $user->get_user($_SESSION["userid"]);
 
+} else {
+	header("Location: main.php");
+	exit();
+}
+?>
 <body>
 <div id="nav-bar-main">
 <div class="nav-bar-margin"></div>
