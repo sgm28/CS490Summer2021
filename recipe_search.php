@@ -12,13 +12,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<script type="text/javascript">
-  
-  $('.recipe-header').click(function(){
-  $(this).next().slideToggle();
-  $(this).toggleClass('active');
-});
-</script>
+
 </head>
 
 <style type="text/css">
