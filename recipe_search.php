@@ -91,7 +91,7 @@ if(!isset($array))
               if(isset($array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['ingredients'][$ingredientsIndex]['name']) && $isIngredientsPrintedOnce == false)
               {
 
-                     echo "<h3>" . "Ingredients" . "</h3>";
+                    // echo "<h3>" . "Ingredients" . "</h3>";
                      $isIngredientsPrintedOnce = true;
                    
 
@@ -142,7 +142,12 @@ if(!isset($array))
 
     }
     echo "\n";
+
+    echo "<div class='ingredients'>";
+    echo "<h3>Ingredients</h3>";
     echo $allIngredientsOutput;
+    echo ="</div>";
+
     echo $allEquipmentOutput;
     echo $allInstructionOutput;
     $allIngredientsOutput="";
