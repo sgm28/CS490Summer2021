@@ -48,6 +48,9 @@ if(!isset($array))
 
   //Variable to stored all the  ingredients per recipe 
   $allIngredientsOutput = "";
+  //Variable to stored all the  equipment per recipe
+  $allEquipmentOutput ="";
+
   //Looping over each recipe
   for ($index = 0; $index < $array['number']; $index++) {
 
@@ -109,14 +112,16 @@ if(!isset($array))
                echo "<h3>" . "Equipment" . "</h3>";
                 $isEquipmentPrintedOnce = true;
 
-                echo "<p>" . $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['equipment'][$equipmentIndex]['name']  . "</p>";
+                 $allEquipmentOutput = $allEquipmentOutput . 
+
+                 "<p>" . $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['equipment'][$equipmentIndex]['name']  . "</p>" ."\n";
              }
 
             
 
 
 
-           echo "\n"; 
+           //echo "\n"; 
          }
         //Preventing the computer from printing more than one instruction heading per recipe
          if (isset( $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['step']) && $isInstructionsPrintedOnce == false)
@@ -133,6 +138,9 @@ if(!isset($array))
     }
     echo "\n";
     echo $allIngredientsOutput;
+    echo $allEquipmentOutput;
+    $allIngredientsOutput="";
+    $allEquipmentOutput="";
 }
 
 
