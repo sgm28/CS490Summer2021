@@ -151,7 +151,7 @@ if(!isset($array))
     echo "<div class='equipment'>";
     echo "<h3>Equipment</h3>";
     echo $allEquipmentOutput; 
-    echo ="</div>";
+    echo "</div>";
 
     echo $allEquipmentOutput;
     echo $allInstructionOutput;
