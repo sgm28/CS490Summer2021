@@ -4,7 +4,13 @@
 
 
 
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Output</title>
+</head>
+<body>
 
 
 
@@ -207,3 +213,5 @@ if(!isset($array))
 
 
 ?>
+</body>
+</html>
