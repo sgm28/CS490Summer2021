@@ -113,7 +113,7 @@ if(!isset($array))
            //Preventing the computer from printing more than one equipment heading per recipe
           if (isset($array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['equipment'][$equipmentIndex]['name']) && $isEquipmentPrintedOnce == false)
              {
-               echo "<h3>" . "Equipment" . "</h3>";
+               //echo "<h3>" . "Equipment" . "</h3>";
                 $isEquipmentPrintedOnce = true;
 
                  $allEquipmentOutput = $allEquipmentOutput . 
@@ -147,6 +147,11 @@ if(!isset($array))
     echo "<h3>Ingredients</h3>";
     echo $allIngredientsOutput;
     echo "</div>";
+
+    echo "<div class='equipment'>";
+    echo "<h3>Equipment</h3>";
+    echo $allEquipmentOutput; 
+    echo ="</div>";
 
     echo $allEquipmentOutput;
     echo $allInstructionOutput;
