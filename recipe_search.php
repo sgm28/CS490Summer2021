@@ -71,7 +71,7 @@ if(!isset($array))
         for($stepsIndex = 0; $stepsIndex < count($array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps']); $stepsIndex++)
         {
 
-           
+           $allIngredientsOutput = "";
            //Looping over each ingredient
            $isIngredientsPrintedOnce = false;
            for($ingredientsIndex = 0; $ingredientsIndex < count($array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['ingredients']); $ingredientsIndex++)
@@ -88,11 +88,14 @@ if(!isset($array))
 
 
               }
-               echo "<p>" . $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['ingredients'][$ingredientsIndex]['name']  . "</p>";
-                echo "\n";
+              $allIngredientsOutput = $allIngredientsOutput . "<p>" . $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['ingredients'][$ingredientsIndex]['name']  . "</p>" . "\n";
+               // echo "<p>" . $array['results'][$index]['analyzedInstructions'][$instructionIndex]['steps'][$stepsIndex]['ingredients'][$ingredientsIndex]['name']  . "</p>";
+               //  echo "\n";
 
           
          }
+         echo $allIngredientsOutput;
+         $allIngredientsOutput="";
         
           //Looping over equipment
          $isEquipmentPrintedOnce = false;
