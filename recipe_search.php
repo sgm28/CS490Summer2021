@@ -9,6 +9,7 @@
   <link href="recipe_search.css" type="text/css" rel="stylesheet">
 </head>
 <?php
+ session_start();
 //Check if there is a user logged in
 //Get user and profile data
 if (isset($_SESSION["useruid"])){
