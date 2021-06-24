@@ -52,7 +52,10 @@ if(!isset($array))
       echo "<div class='recipe'>";
       echo "<div class='recipe-header'>";
     echo "<h2>" . $array['results'][$index]['title'] . " " . $array['results'][$index]['readyInMinutes']  . " minutes" . "</h2></div>";
-    echo  "<img src=". $array['results'][$index]['image'] . ">";
+
+    echo "<div class='recipe-body'>";
+    echo "<div class='img-wrap'><img src=". $array['results'][$index]['image']   ."></div>";
+   // echo  "<img src=". $array['results'][$index]['image'] . ">";
     echo "<p>" . $array['results'][$index ]['summary'] . "</p>";
     echo "Page source: ".  "<a href=" .  $array['results'][$index ]['sourceUrl'] . ">".  $array['results'][$index ]['sourceUrl'] . "</a>";
     
