@@ -9,7 +9,7 @@ $dBName = "sql5687781";
 $serverName = "sql2.njit.edu";
 $dBUsername = "sgm28";
 $dBPassword = "hM77K+B#qx(G+/v3";
-$dBName = "sgm28";
+$dBName = "sgm28.UsersCS490";
 
 
 /*
