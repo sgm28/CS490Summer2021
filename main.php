@@ -47,6 +47,12 @@ include "autoload.php";
 </section>
   <img src="https://capsource-bucket.s3.us-west-2.amazonaws.com/wp-content/uploads/2019/10/08181040/njit.png" alt="NJIT" width="60%">
   <div class="box-error hidden"><p>test message</p></div>
+  <h3> Website will not allow you to sign up because you need to connect to school network using a vpn.
+  Please click on the links to watch a video demostration of the website
+  </h3>
+  <h3> <a href="https://www.loom.com/share/f0208df0516b4b01b1cd4103487f8253?sid=11c25dff-df11-4629-a205-ad67c9667e47">Video 1</a></h3>
+  <h3><a href="https://www.loom.com/share/e7f5a5258c6d4aecb6f6f8e63175f29b">Video 2</a></h3>
+  <h3><a href="https://www.loom.com/share/d174d1446b794ddfacd61f72b9d626e7">Video 3</a></h3>
   <form class="" id="form" action="login.inc.php" method="post">
     <div class="field sign-up-toggle hidden">
       <label for="name">Full Name</label><br>
