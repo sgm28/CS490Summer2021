@@ -136,7 +136,7 @@ function test_input($data) {
 $curl = curl_init();
 //echo "3";
 // set our url with curl_setopt()
-curl_setopt($curl, CURLOPT_URL, 'https://api.spoonacular.com/recipes/complexSearch?query='. $query . '&addRecipeInformation=true'. '&apiKey=03cfb47edd6141b6b806837e1c114cfb');
+curl_setopt($curl, CURLOPT_URL, 'https://api.spoonacular.com/recipes/complexSearch?query='. $query . '&addRecipeInstructions=true' . '&addRecipeInformation=true'. '&apiKey=03cfb47edd6141b6b806837e1c114cfb');
 //echo "4";
 // return the transfer as a string, also with setopt()
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -196,6 +196,7 @@ if(!isset($array))
     
 
     //Looping over each instruction
+	
     for ($instructionIndex = 0;  $instructionIndex < count($array['results'][$index]['analyzedInstructions']); $instructionIndex++)
     {
         
@@ -265,6 +266,7 @@ if(!isset($array))
         }
 
     }
+	
     echo "\n";
   echo "<div class='recipe'>";
       echo "<div class='recipe-header'>";
