@@ -9,7 +9,7 @@ include "../../autoload.php";
 
 $user = new User();
 
-$all_users = $user->get_friends($_SESSION['userid']);
+$all_users = $user->get_friends($_SESSION["userid"]);
 
 
 
@@ -41,7 +41,7 @@ $all_users = $user->get_friends($_SESSION['userid']);
      
     	<?php 
     	$user = new User();
-    	$all_other_users = $user->get_friends($_SESSION['userid']);
+    	$all_other_users = $user->get_friends($_SESSION["userid"]);
 
     	foreach($all_other_users as $USER){
     		include "single_user.php"; 
