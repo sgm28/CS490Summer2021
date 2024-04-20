@@ -7,7 +7,7 @@ if(isset($_SESSION['userlevel'])){
 		$header = "location: FrontEnd/AdminPage/Home.php";
 }
 
-	$sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);"; //? = Placeholders
+	$sql = "INSERT INTO UsersCS490 (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);"; //? = Placeholders
 	$stmt = mysqli_stmt_init($conn);
 	
 	if(!mysqli_stmt_prepare($stmt, $sql)){
@@ -58,7 +58,7 @@ function checkRows(){
 //Return true(error) username/email already exists in the database
 function uidExists($conn, $username, $email){
 	//$sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;"; //? = Placeholders
-	$sql = "SELECT * FROM users WHERE usersUid = '$username' OR usersEmail = '$email';"; //? = Placeholders
+	$sql = "SELECT * FROM UsersCS490 WHERE usersUid = '$username' OR usersEmail = '$email';"; //? = Placeholders
 	$result = readData($sql);
 	//echo $result;
 	if ($result){
