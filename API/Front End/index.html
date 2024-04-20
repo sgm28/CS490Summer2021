@@ -1,0 +1,87 @@
+<! --
+  Sakar Michel
+  CS 490 110
+  Release candidate 
+
+  Used w3school source code and made modification https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Cooking API</title>
+
+  <meta name="description" content="Cooking API">
+
+
+ <!-- link to font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+ form.API input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.API button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.API button:hover {
+  background: #0b7dda;
+}
+
+
+
+
+form.API button:hover {
+  background: #0b7dda;
+}
+
+
+form.API::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<!-- The search button -->
+<form class="API" action="../MiddleEnd/action.php" method="post" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Recipe..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
