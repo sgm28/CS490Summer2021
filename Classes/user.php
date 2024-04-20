@@ -4,7 +4,7 @@ class User{
 	
 	public function get_data($id){
 		require_once "functions.inc.php";
-		$query = "select * from users where usersId = '$id' limit 1";
+		$query = "select * from UsersCS490 where usersId = '$id' limit 1";
 		
 		$result = readData($query);
 		
@@ -17,7 +17,7 @@ class User{
 	
 	public function get_user($id){
 		require_once "functions.inc.php";
-		$query = "select * from users where usersId = '$id' limit 1";
+		$query = "select * from UsersCS490 where usersId = '$id' limit 1";
 		$result = readData($query);
 		if($result){
 			$row = $result[0];
@@ -28,7 +28,7 @@ class User{
 	
 	public function get_friends($id){
 		require_once "functions.inc.php";
-		$query = "select * from users where usersId != '$id'";
+		$query = "select * from UsersCS490 where usersId != '$id'";
 		$result = readData($query);
 		if($result){
 			$row = $result;
@@ -40,7 +40,7 @@ class User{
 
 	public function get_active($id){
 		require_once "functions.inc.php";
-		$query = "select active from users where usersId = '$id' || usersUid = '$id'";
+		$query = "select active from UsersCS490 where usersId = '$id' || usersUid = '$id'";
 		$result = readData($query);
 		if($result){
 			$row = $result[0]['active'];
@@ -55,7 +55,7 @@ class User{
 		if($status == 0){$status=1;}
 		elseif ($status == 1){$status=0;}
 
-		$query = "update users set active = '$status' where usersId = '$id'";
+		$query = "update UsersCS490 set active = '$status' where usersId = '$id'";
 		$result = saveQuery($query);
 		if($result){
 			return true;
@@ -66,7 +66,7 @@ class User{
 	public function delete_user($id){
 		require_once "functions.inc.php";
 		
-		$query = "DELETE FROM users WHERE usersId = '$id'";
+		$query = "DELETE FROM UsersCS490 WHERE usersId = '$id'";
 		$result = saveQuery($query);
 
 		$query = "DELETE FROM posts WHERE userid = '$id'";
