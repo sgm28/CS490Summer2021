@@ -1,15 +1,19 @@
 <?php
+
+
 /*
-$serverName = "sql5.freemysqlhosting.net";
-$dBUsername = "sql5687781";
-$dBPassword = "LZuWfXvCg5";
-$dBName = "sql5687781";
+
+Database information is in text file databaseinformation.txt
+I did not include the databaseinformation.txt in the github repository for 
+security reasons.
+
+
 */
 
-$serverName = "sql2.njit.edu";
-$dBUsername = "sgm28";
-$dBPassword = "hM77K+B#qx(G+/v3";
-$dBName = "sgm28";
+$serverName = "";
+$dBUsername = "";
+$dBPassword = "";
+$dBName = "";
 
 
 /*
